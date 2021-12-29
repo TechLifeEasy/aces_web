@@ -6,7 +6,7 @@ import {Navbar} from './components/Navbar'
 
 function App() {
   return (
-    <div className="flex w-10/12 flex-col m-auto ">
+    <div className="flex flex-col ">
      
      <Navbar/>
      <Socials></Socials>

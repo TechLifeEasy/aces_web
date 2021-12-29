@@ -11,11 +11,14 @@ export const Navbar = () => {
     return (
         <div>
             <Router>
-                <NavLink className='m-2' to='/'>Home</NavLink>
-                <NavLink className='m-2' to='/contact'>Contact Us</NavLink>
-                <NavLink  className='m-2' to='/events'>Events</NavLink>
-                <NavLink  className='m-2' to='/about'>About</NavLink>
-                <NavLink  className='m-2' to='/team'>team</NavLink>
+                <div className=' bg-sky-400 px-10' >
+                    
+                <NavLink className='m-2  z-10' to='/'>Home</NavLink>
+                <NavLink className='m-2  z-10' to='/contact'>Contact Us</NavLink>
+                <NavLink  className='m-2  z-10' to='/events'>Events</NavLink>
+                <NavLink  className='m-2  z-10' to='/about'>About</NavLink>
+                <NavLink  className='m-2  z-10' to='/team'>team</NavLink>
+                </div>
                 <Routes>
 
                 <Route exact path="/" element={<Home/>}/>

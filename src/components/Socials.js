@@ -7,11 +7,11 @@ export default function Socials() {
         <div className="fixed flex flex-col h-screen items-center justify-between left-1">
     
 
-        <div className='flex-1  w-1 bg-black   mb-2 rounded-lg left'>
+        <div className='flex-1  w-1 bg-sky-400   mb-2 rounded-lg left'>
 
         </div>
 
-        <div className='flex-none  w-1 bg-black h-1 rounded-full left mb-2 '>
+        <div className='flex-none  w-1 bg-sky-400 h-1 rounded-full left mb-2 '>
 
         </div>
 

@@ -17,6 +17,12 @@ export default function Events({state}) {
                         <>
                         <Event {...item} state={state}></Event>
 
+                        {
+                            index!==data.length-1
+                            &&
+                            <img src="/image/event_line.svg"  className="h-36" alt="%"></img>
+                        }
+
                         
                         </>
 
@@ -33,7 +39,7 @@ function Event({name,text,url,state}){
 
 
     return (
-        <div className={`flex flex-col items-center justify-center flex-none w-2/3  bg-blue cursor-pointer rounded-sm p-4  -rotate-2 ml-4 hover:rotate-0 ${!state ? 'team-div' : 'w-2/3 m-8'}`}>
+        <div className={`flex flex-col items-center justify-center flex-none w-2/3  bg-blue cursor-pointer rounded-sm  ${!state ? 'team-div' : ' m-3'}`}>
         <img
         
         src={url}
@@ -44,6 +50,7 @@ function Event({name,text,url,state}){
         <h1 className=' text-blue-600 text-xl'>{name}</h1>
     
         <div className=' text-justify'>{text || 'JavaScript often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS.'}</div>
+        
         </div>
     )
 }

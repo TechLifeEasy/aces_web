@@ -35,7 +35,11 @@ function Member({name,text,url,position,state}){
 
 
     return (
-        <div className={`flex flex-col items-center justify-start flex-none w-1/3  bg-blue cursor-pointer rounded-sm p-4  -rotate-2 ml-4 hover:rotate-0 ${!state ? 'team-div' : 'm-5'}`}>
+        <div className='flex items-center justify-center'>
+
+            <Tree></Tree>
+
+        <div className={`flex flex-col items-center justify-start flex-none w-1/3  bg-blue cursor-pointer rounded-sm p-4 -rotate-2 ml-4 hover:rotate-0 ${!state ? 'team-div' : 'm-5'}`}>
         <img
         
         src={url}
@@ -48,8 +52,17 @@ function Member({name,text,url,position,state}){
         {position}
         </div>
         <div className=' text-justify'>{text || 'JavaScript often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS.'}</div>
+        
+        </div>
+        <Tree right={true}></Tree>
         </div>
     )
 }
 
+
+function Tree({right}){
+    return (
+        <img src="/image/team_tree.svg" className={` hidden sm:block h-36 ${right?'-rotate-90':'rotate-90'}`} alt="#"></img>
+    )
+}
 
