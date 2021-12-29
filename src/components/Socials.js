@@ -7,19 +7,19 @@ export default function Socials() {
         <div className="fixed flex flex-col h-screen items-center justify-between left-1">
     
 
-        <div className='flex-1  w-1 bg-black  mx-3 mb-2 '>
+        <div className='flex-1  w-1 bg-black   mb-2 rounded-lg left'>
 
         </div>
 
-        <div className='flex-none  w-1 bg-black h-1 rounded-full mx-3 '>
+        <div className='flex-none  w-1 bg-black h-1 rounded-full left mb-2 '>
 
         </div>
 
-        <div className="flex flex-col items-center justify-center p-1">
+        <div className="flex flex-col items-center justify-center ">
 
             <Icon 
-            url='https://www.facebook.com/aces.itnu/' 
-            Component={BsFacebook}
+            url='https://www.linkedin.com/company/association-of-computer-engineering-students/' 
+            Component={BsLinkedin}
             color='text-blue-600'
             ></Icon>
             <Icon 
@@ -28,8 +28,8 @@ export default function Socials() {
             color='text-red-500'
             ></Icon>
             <Icon 
-            url='https://www.linkedin.com/company/association-of-computer-engineering-students/' 
-            Component={BsLinkedin}
+            url='https://www.facebook.com/aces.itnu/' 
+            Component={BsFacebook}
             color='text-blue-600'
             ></Icon>
             <Icon 
