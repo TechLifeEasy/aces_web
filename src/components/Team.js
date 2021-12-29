@@ -1,50 +1,46 @@
-import React from 'react'
+import React,{useState} from 'react'
+import data from '../data/team'
 
 export default function Team() {
 
-    const data=[
-        'zeel','kamla',
-        'zeel','kamla',
-        'zeel','kamla',
-    ]
+    const [state,setState]=useState(true);
+
+    
+ 
     return (
-        <div className='flex flex-col items-center my-10'>
+        <div className={`flex  items-center my-10 flex-col`}>
             <h1 className=' text-4xl'>Team</h1>
 
-        <div className='flex w-full overflow-scroll no-scrollbar my-10'>
+        <div className={`flex w-full overflow-scroll my-10 no-scrollbar ${!state ? '' :'flex-col items-center justify-center'}`}>
             {
                 data.map((item,index)=>{
                     return (
                         <>
-                        <Member name={item}></Member>
+                        <Member {...item} state={state}></Member>
 
-                        {/* {
-                            index!==data.length-1
-                            &&
-                            <Wave/>
-                            
-                        } */}
+    
                         </>
 
 )
 })
 }
         </div>
+        <button onClick={()=>setState(!state)}>change</button>
 </div>
     )
 }
 
 
-function Member({name,text,url,position}){
+function Member({name,text,url,position,state}){
 
 
     return (
-        <div className='flex flex-col items-center justify-center flex-none w-1/3  bg-blue cursor-pointer rounded-sm p-4 team-div -rotate-2 ml-4 hover:rotate-0'>
+        <div className={`flex flex-col items-center justify-start flex-none w-1/3  bg-blue cursor-pointer rounded-sm p-4  -rotate-2 ml-4 hover:rotate-0 ${!state ? 'team-div' : 'm-5'}`}>
         <img
         
         src={url}
         alt='#'
-        className=''
+        className='h-64'
 
         ></img>
         <h1 className=' text-blue-600 text-xl'>{name}</h1>
