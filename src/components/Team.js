@@ -1,5 +1,8 @@
 import React from 'react'
 import data from '../data/team'
+import Pulse from 'react-reveal/Pulse';
+
+
 
 export default function Team({state}) {
 
@@ -8,18 +11,27 @@ export default function Team({state}) {
     
  
     return (
+        <>
         <div className={`flex  items-center my-10 flex-col`}>
-            <h1 className=' text-4xl'>Team</h1>
+          
+            <h1 className=' text-4xl'>
+
+               Our Team 
+                
+                </h1>
+          
 
         <div className={`flex w-full overflow-scroll my-10 no-scrollbar ${!state ? '' :'flex-col items-center justify-center'}`}>
             {
                 data.map((item,index)=>{
                     return (
-                        <>
+                        <Pulse>
+                            
                         <Member {...item} state={state}></Member>
+                        </Pulse>
 
-    
-                        </>
+
+                        
 
 )
 })
@@ -27,6 +39,7 @@ export default function Team({state}) {
         </div>
         {/* <button onClick={()=>setState(!state)}>change</button> */}
 </div>
+</>
     )
 }
 

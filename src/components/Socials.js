@@ -1,6 +1,6 @@
 import React from 'react'
 import {BsFacebook,BsLinkedin,BsCloudFill,BsInstagram} from 'react-icons/bs';
-
+import Zoom from 'react-reveal/Zoom';
 
 export default function Socials() {
     return (
@@ -14,6 +14,9 @@ export default function Socials() {
         <div className='flex-none  w-1 bg-sky-400 h-1 rounded-full left mb-2 '>
 
         </div>
+
+        <Zoom bottom>
+            
 
         <div className="flex flex-col items-center justify-center ">
 
@@ -42,6 +45,7 @@ export default function Socials() {
  
             
         </div>
+            </Zoom>
         </div>
     )
 }

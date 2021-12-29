@@ -1,10 +1,16 @@
 import React from 'react'
+// import Zoom from 'react-reveal/Zoom';
 
 export default function About() {
     return (
         <div className='flex flex-col items-center my-10 w-9/12 m-auto'>
 
-            <h1 className=' text-4xl my-10'> About Us</h1>
+            <h1 className=' text-4xl my-10'>
+            {/* <Zoom top > */}
+                 About Us
+                {/* </Zoom> */}
+                 
+                 </h1>
 
             <img src='/image/Previous Event Photos/IMG_20191003_113836.jpg' alt='^'></img>
 
