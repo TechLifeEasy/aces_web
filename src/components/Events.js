@@ -1,9 +1,9 @@
-import React,{useState} from 'react'
+import React from 'react'
 import data from '../data/events';
 
-export default function Events() {
+export default function Events({state}) {
 
-    const [state,setState]=useState(true);
+    // const [state,setState]=useState(true);
 
 
     return (
@@ -24,7 +24,7 @@ export default function Events() {
 })
 }
         </div>
-        <button onClick={()=>setState(!state)}>change</button>
+        {/* <button onClick={()=>setState(!state)}>change</button> */}
 </div>
     )
 }
@@ -33,7 +33,7 @@ function Event({name,text,url,state}){
 
 
     return (
-        <div className={`flex flex-col items-center justify-center flex-none w-1/3  bg-blue cursor-pointer rounded-sm p-4  -rotate-2 ml-4 hover:rotate-0 ${!state ? 'team-div' : 'w-2/3 m-8'}`}>
+        <div className={`flex flex-col items-center justify-center flex-none w-2/3  bg-blue cursor-pointer rounded-sm p-4  -rotate-2 ml-4 hover:rotate-0 ${!state ? 'team-div' : 'w-2/3 m-8'}`}>
         <img
         
         src={url}

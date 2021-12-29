@@ -1,9 +1,9 @@
-import React,{useState} from 'react'
+import React from 'react'
 import data from '../data/team'
 
-export default function Team() {
+export default function Team({state}) {
 
-    const [state,setState]=useState(true);
+    // const [state,setState]=useState(true);
 
     
  
@@ -25,7 +25,7 @@ export default function Team() {
 })
 }
         </div>
-        <button onClick={()=>setState(!state)}>change</button>
+        {/* <button onClick={()=>setState(!state)}>change</button> */}
 </div>
     )
 }
