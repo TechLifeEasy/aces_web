@@ -1,10 +1,9 @@
-
-
+import Socials from "./components/Socials";
 
 function App() {
   return (
-    <div className="text-3xl font-bold underline bg-sky-500">
-     ACES
+    <div>
+     <Socials></Socials>
     </div>
   );
 }
