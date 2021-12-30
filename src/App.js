@@ -1,15 +1,9 @@
 import Socials from "./components/Socials";
 
-// import Events from "./components/Events";
-// import Team from './components/Team';
-import { Navbar } from "./components/Navbar";
 import { useState, useEffect } from "react";
 import Footer from "./components/Footer";
-import Navbar2 from "./components/Navbar2";
-import HeroContent from "./components/HeroContent";
-import CTA from "./components/CTA";
-import DiscordLink from "./components/DiscordLink";
-import EventCard from "./components/EventCard";
+import Navbar from "./components/Navbar";
+import Fade from 'react-reveal/Fade';
 
 import { BsFillSunFill, BsMoonFill } from "react-icons/bs";
 
@@ -29,14 +23,11 @@ function App() {
   return (
     <div className={`flex flex-col`}>
       {/* <Navbar /> */}
-      <Navbar2 />
-      <HeroContent />
-      <CTA />
-      <EventCard />
-      <DiscordLink />
+      <Navbar />
+    
       <Socials></Socials>
 
-      {/* <div className=" absolute right-10 top-1 text-white cursor-pointer"  onClick={()=>setLightTeam(!isLightTheam)}>
+      <div className=" absolute right-12 top-6 text-black cursor-pointer dark:text-white"  onClick={()=>setLightTeam(!isLightTheam)}>
        
 
        {
@@ -48,7 +39,9 @@ function App() {
        }
 
        
-     </div> */}
+     </div>
+
+     
 
       <Footer></Footer>
     </div>

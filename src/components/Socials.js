@@ -4,21 +4,21 @@ import Zoom from 'react-reveal/Zoom';
 
 export default function Socials() {
     return (
-        <div className="fixed flex flex-col h-screen items-center justify-between left-1">
+        <div className="fixed flex flex-col h-screen items-center justify-center">
     
 
-        <div className='flex-1  w-1 bg-sky-400   mb-2 rounded-lg left'>
+        {/* <div className='flex-1  w-1 bg-sky-400   mb-2 rounded-lg left'>
 
         </div>
 
         <div className='flex-none  w-1 bg-sky-400 h-1 rounded-full left mb-2 '>
 
-        </div>
+        </div> */}
 
-        <Zoom bottom>
+        <Zoom left>
             
 
-        <div className="flex flex-col items-center justify-center ">
+        <div className="flex flex-col items-center justify-center bg-blue-700">
 
             <Icon 
             url='https://www.linkedin.com/company/association-of-computer-engineering-students/' 
@@ -51,7 +51,7 @@ export default function Socials() {
 function Icon({url,Component,color}) {
     return (
         <a href={url} className='flex-1 ' target="_blank" rel="noreferrer">
-        <Component size={30} className={'text-base mb-3 ml-1 '+color}/>
+        <Component size={30} className={'text-white my-2 mx-2 hover:text-sky-400 '+color}/>
     </a>
     )
 }

@@ -3,7 +3,7 @@ import { BsFacebook, BsInstagram, BsLinkedin } from 'react-icons/bs'
 
 
 
-export const Contact = () => {
+export default function Contact () {
   return (
     <>
       <h1 className='text-4xl text-center my-5'>

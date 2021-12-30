@@ -4,6 +4,7 @@
 
 body {
   margin: 0;
+  overflow-x: hidden;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -21,9 +22,11 @@ body {
   
 }
 
-a{
+
+
+/* a{
   cursor: pointer;
-}
+} */
 
 .full{
   width: 100% !important;
@@ -33,6 +36,10 @@ a{
   
   background-color: rgb(55, 60, 61);
   color: white;
+}
+
+.body_d nav *{
+  color: white !important;
 }
 
 
