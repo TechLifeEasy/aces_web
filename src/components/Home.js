@@ -53,7 +53,6 @@ function App() {
             </div>
         </div>
      
-     <About></About>
      {/* <Team state={false}></Team> */}
      {/* <Events state={false}></Events> */}
 
