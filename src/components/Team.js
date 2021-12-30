@@ -1,7 +1,7 @@
 import {React,useState} from 'react'
 import data from '../data/team'
 import Pulse from 'react-reveal/Pulse';
-import { BsFacebook, BsInstagram, BsLinkedin } from 'react-icons/bs'
+import { BsFacebook, BsInstagram, BsLinkedin,BsThreeDots } from 'react-icons/bs'
 import Bounce from 'react-reveal/Bounce';
 import {AiOutlineMail,AiFillPhone,AiFillDownCircle,AiFillUpCircle} from 'react-icons/ai';
 
@@ -70,14 +70,10 @@ function Member({name,text,url,position,state}){
         
         {show===true?
         <>
-        <button onClick={()=>{setShow(!show)}}><AiFillUpCircle size={20}/></button>
+        <button onClick={()=>{setShow(!show)}}><AiFillUpCircle color='grey' size={20}/></button>
         <Bounce left><div className=' bg-sky-100 p-2  rounded-2xl shadow-xl shadow-slate-500 '>{text || "I’m a graphic designer with over five years of experience specialising in creating beautiful, unique website experiences that make users’ time with a brand more enjoyable. I’m looking forward to growing my management skills to hopefully develop and inspire a team of my own.I’m a graphic designer with over five years of experience specialising in creating beautiful, unique website experiences that make users’ time with a brand more enjoyable. I’m looking forward to growing my management skills to hopefully develop and inspire a team of my own."}</div></Bounce></>
-        :<button onClick={()=>{setShow(!show)}}><AiFillDownCircle size={20}/></button> }
-        
-
-
-
-        
+        :<button onClick={()=>{setShow(!show)}}><AiFillDownCircle color='green' size={20}/></button> }
+                
         </div>
         
         <Tree right={true}></Tree>

@@ -58,14 +58,15 @@ function Event({ name, text, url, state }) {
 
     return (
         <div className={`flex flex-col items-center justify-center flex-none w-2/3  bg-blue cursor-pointer rounded-sm  ${!state ? 'team-div' : ' m-3 mx-auto'}`}>
+            
+            <h1 className=' text-blue-600 text-3xl p-2 underline '>{name}</h1>
             <img
 
                 src={url}
                 alt='#'
-                className={!state ? `h-64` : 'h-80'}
+                className={!state ? `h-64` : 'h-80 border-sky-900 border-4 rounded-xl'}
 
             ></img>
-            <h1 className=' text-blue-600 text-xl'>{name}</h1>
 
             <div className=' text-justify'>{text || 'JavaScript often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS.'}</div>
 
