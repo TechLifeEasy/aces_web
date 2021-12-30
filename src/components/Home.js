@@ -27,7 +27,7 @@ function App() {
 
                 <h1 className=" text-3xl"> we run the grate comunity</h1>
                 </Flip> */}
-                <div className="text-2xl font-serif text-blue-400 bg-sky-200 p-7 rounded-2xl mt-7">
+                <div className="text-2xl font-serif text-white bg-sky-400 p-7 rounded-2xl mt-7">
                 <Typewriter
                     onInit={(typewriter)=>{
                         typewriter.typeString("ACES\n").start();
@@ -53,7 +53,7 @@ function App() {
             </div>
         </div>
      
-     <About></About>
+     {/* <About></About> */}
      {/* <Team state={false}></Team> */}
      {/* <Events state={false}></Events> */}
 
