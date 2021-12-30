@@ -1,6 +1,7 @@
 import Socials from "./components/Socials";
 
 
+
 // import Events from "./components/Events";
 // import Team from './components/Team';
 import {Navbar} from './components/Navbar'
@@ -25,6 +26,7 @@ function App() {
   },[isLightTheam])
 
   return (
+
 
     <div className={`flex flex-col`}>
      
