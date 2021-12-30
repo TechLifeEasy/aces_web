@@ -11,13 +11,13 @@ export const Navbar = () => {
     return (
         <div>
             <Router>
-                <div className=' bg-sky-400 px-10' >
-                    
-                <NavLink className='m-2  z-10' to='/'>Home</NavLink>
-                <NavLink className='m-2  z-10' to='/contact'>Contact Us</NavLink>
-                <NavLink  className='m-2  z-10' to='/events'>Events</NavLink>
-                <NavLink  className='m-2  z-10' to='/about'>About</NavLink>
-                <NavLink  className='m-2  z-10' to='/team'>team</NavLink>
+                <div className=' flex justify-end  items-end gap-2 bg-sky-500 px-10 h-10 ' >
+                
+                <NavLink className='m-2  p-1 my-auto hover:text-black text-center text-zinc-100 font-serif z-10' to='/' style={({isActive}) => ( isActive ? {background:"#003B73",borderRadius:"10px",padding:"6px",width:"70px"}:{})}>Home</NavLink>
+                <NavLink  className='m-2  p-1 my-auto hover:text-black text-center text-zinc-100 font-serif z-10' to='/' style={({isActive}) => ( isActive ? {background:"#003B73",borderRadius:"10px",padding:"6px",width:"70px"}:{})} to='/events'>Events</NavLink>
+                <NavLink  className='m-2  p-1 my-auto hover:text-black text-center text-zinc-100 font-serif z-10' to='/' style={({isActive}) => ( isActive ? {background:"#003B73",borderRadius:"10px",padding:"6px",width:"70px"}:{})} to='/team'>Team</NavLink>
+                <NavLink  className='m-2  p-1 my-auto hover:text-black text-center text-zinc-100 font-serif z-10' to='/' style={({isActive}) => ( isActive ? {background:"#003B73",borderRadius:"10px",padding:"6px",width:"100px"}:{})} to='/about'>About Us</NavLink>
+                <NavLink className='m-2  p-1 my-auto hover:text-black text-center text-zinc-100 font-serif z-10' to='/' style={({isActive}) => ( isActive ? {background:"#003B73",borderRadius:"10px",padding:"6px",width:"100px"}:{})} to='/contact'>Contact Us</NavLink>
                 </div>
                 <Routes>
 
