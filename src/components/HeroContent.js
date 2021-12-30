@@ -25,14 +25,14 @@ const HeroContent = () => {
                 </Zoom> 
             </div>
 
-            <div className="text-2xl font-serif  py-3 rounded-2xl ml-5">
+            <div className="text-xl   rounded-2xl my-3">
 
-            Association of Computer Engineering Students 
+            Association of Computer Engineering Students
             </div>
             
               
 
-               <div className="text-2xl font-serif  py-3 text-center rounded-2xl ml-5">
+               <div className="text-xl font-serif  py-3 text-center rounded-2xl ml-5">
                    
               
                  <Typewriter 
