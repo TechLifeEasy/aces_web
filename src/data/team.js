@@ -1,7 +1,7 @@
 const Director=[
     {
         
-            "url":'/image/Board_Member_Photos/Kanisha Shah.jpg',
+            "url":'https://res.cloudinary.com/dcgtilnwq/image/upload/v1640841159/aces/team/Faculty_Advisor_Sapan_Sir_kvet8g.jpg',
             "text":'',
             "name":'xyz',
             "position":'Director'
@@ -12,10 +12,10 @@ const Director=[
 const Chairman=[
     {
         
-            "url":'/image/Board_Member_Photos/Kanisha Shah.jpg',
+            "url":'https://res.cloudinary.com/dcgtilnwq/image/upload/v1640841159/aces/team/Faculty_Advisor_Sapan_Sir_kvet8g.jpg',
             "text":'',
             "name":'xyz',
-            "position":'CHairman'
+            "position":'Chairman'
           
     }
 ]

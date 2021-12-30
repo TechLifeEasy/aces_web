@@ -1,5 +1,5 @@
 import React from 'react'
-import {BsFacebook,BsLinkedin,BsCloudFill,BsInstagram} from 'react-icons/bs';
+import {BsFacebook,BsLinkedin,BsCloudFill,BsInstagram,BsDiscord} from 'react-icons/bs';
 import Zoom from 'react-reveal/Zoom';
 
 export default function Socials() {
@@ -39,6 +39,10 @@ export default function Socials() {
             url='https://technology.nirmauni.ac.in/student_work/aces/' 
             Component={BsCloudFill}
             ></Icon>
+            <Icon 
+            url='https://discord.com/invite/h7xHS7PFBj' 
+            Component={BsDiscord}
+            ></Icon>
            
 
         </div>
@@ -51,7 +55,7 @@ export default function Socials() {
 function Icon({url,Component,color}) {
     return (
         <a href={url} className='flex-1 ' target="_blank" rel="noreferrer">
-        <Component size={30} className={'text-white my-2 mx-2 hover:text-sky-400 '+color}/>
+        <Component size={30} className={'text-white my-2 mx-2  '+color}/>
     </a>
     )
 }

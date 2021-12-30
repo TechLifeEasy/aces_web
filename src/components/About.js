@@ -25,10 +25,10 @@ export default function About() {
           Niram Univercity
         </h2>
       
-            <div className='relative flex flex-row gap-4 text-blue-500'>
+            <div className='relative flex flex-row gap-4 text-blue-500 dark:text-sky-200'>
                  <Roll left><img src={arr[index]} className='block h-25 w-1/2 rounded-xl border-4   ' alt='^' ></img></Roll>
                  <h1 className='text-green-500 '>Vision:</h1>
-                 <Typewriter className="text-blue-500" textStyle={{ color:"blue" }}
+                 <Typewriter className="text-blue-500 dark:text-blue-300" 
                      onInit={(typewriter)=>{
                          typewriter.typeString("Shaping a better future for mankind by developing effective and socially responsible individuals and organizations.").start();
                      }}

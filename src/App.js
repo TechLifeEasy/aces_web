@@ -42,8 +42,10 @@ function App() {
      </div>
 
      
+{/* <Fade bottom> */}
 
       <Footer></Footer>
+{/* </Fade> */}
     </div>
   );
 }

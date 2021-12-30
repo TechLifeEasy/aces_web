@@ -6,17 +6,18 @@ import { BsFacebook, BsInstagram, BsLinkedin } from 'react-icons/bs'
 export default function Contact () {
   return (
     <>
-      <h1 className='text-4xl text-center my-5'>
+   
+     
+      <div className='flex flex-row overflow-auto my-14'>
+      
+      <h2 className="flex items-center justify-center flex-1 max-w-lg mb-14 text-center text-4xl font-bold">
+
     
 
         Contact Us
-   
-        
-        </h1>
-      <div className='flex flex-row overflow-auto'>
-      
+      </h2>
         <div className=" flex  w-1/2 bg-no-repeat h-1/2 mx-auto justify-center flex-col ">
-          <form className="p-5  bg-sky-400 rounded-2xl shadow-2xl shadow-black-10/40">
+          <form className="p-5  bg-blue-900 text-white rounded-2xl shadow-2xl shadow-black-10/40">
             <div className="flex flex-wrap -mx-3 mb-6">
               <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
                 <label className="block uppercase tracking-wide border-black-200 text-black-400 text-xs font-bold mb-2" for="grid-first-name">

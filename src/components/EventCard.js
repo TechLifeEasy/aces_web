@@ -6,7 +6,7 @@ const EventCard = () => {
   return (
     <div className="px-4  mx-auto mb-14 flex flex-col items-center justify-center">
      
-        <h2 className="max-w-lg mb-5 font-sans text-4xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none md:mb-6 group text-center">
+        <h2 className="max-w-lg mb-5 font-sans text-4xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none md:mb-6 group text-center dark:text-white">
           Our Events
         </h2>
       

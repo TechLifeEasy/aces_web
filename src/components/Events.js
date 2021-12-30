@@ -4,21 +4,22 @@ import Fade from 'react-reveal/Fade';
 
 
 export default function Events({ state }) {
- 
+
     // const [state,setState]=useState(true);
 
 
     return (
         <>
-            <h1 className=' text-4xl text-center my-5'>
 
 
-                Events
 
-            </h1>
-            <div className='flex flex-col items-center my-5'>
+            <div className='flex flex-col items-center my-3'>
+                <h2 className="max-w-lg mb-14 font-sans text-4xl font-bold">
 
-                <div className={`flex w-full overflow-scroll no-scrollbar my-10 ${!state ? '' : 'flex-col items-center justify-center'}`}>
+                    Events
+                </h2>
+
+                <div className={`flex w-full overflow-scroll no-scrollbar  ${!state ? '' : 'flex-col items-center justify-center'}`}>
                     {
                         data.map((item, index) => {
                             return (
@@ -58,28 +59,10 @@ function Event({ name, text, url, state, isVideo }) {
 
     return (
         <div className={`flex flex-col items-center justify-center flex-none w-2/3  bg-blue cursor-pointer rounded-sm  ${!state ? 'team-div' : ' m-3 mx-auto'}`}>
-            {/* <<<<<<< HEAD */}
-
-            {/* {
-
-              isVideo
-              ?
-              <video src={url} className={!state ? `h-64` : 'h-80'} controls></video>
-              :
-
-               <img
-               
-               src={url}
-               alt='#'
-               className={!state ? `h-64` : 'h-80'}
-               
-               ></img>
-            }
-            <h1 className=' text-blue-600 text-xl'>{name}</h1> */}
-            {/* ======= */}
+        
 
 
-            <h1 className=' text-blue-600 text-3xl p-2 underline '>{name}</h1>
+            <h1 className=' text-sky-400 text-4xl mb-5  '>{name}</h1>
             {
 
                 isVideo
@@ -96,7 +79,7 @@ function Event({ name, text, url, state, isVideo }) {
             }
             {/* >>>>>>> contact */}
 
-            <div className=' text-justify'>{text || 'JavaScript often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS.'}</div>
+            <div className=' text-justify my-5'>{text || 'JavaScript often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS.'}</div>
 
         </div>
     )

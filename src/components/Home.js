@@ -12,7 +12,7 @@ import Fade from 'react-reveal/Fade';
 
 function App() {
     return (
-        <div className="flex flex-col">
+        <div className="w-11/12 m-auto flex flex-col">
 
             <HeroContent />
             <Fade bottom>

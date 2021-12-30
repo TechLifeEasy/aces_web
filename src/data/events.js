@@ -30,7 +30,7 @@ const Events = [
     },
     
     { 'name': 'xyz', 'text': '', 'url': 'https://res.cloudinary.com/dcgtilnwq/video/upload/v1640841395/aces/events/Snapchat-487896050_uajukk.mp4',"isVideo":true },
-    { 'name': 'xyz', 'text': '', 'url': '/image/Previous Event Photos/IMG_20180201_172619.jpg' },
+  
     { 'name': 'xyz', 'text': '', 'url': 'https://res.cloudinary.com/dcgtilnwq/image/upload/v1640841259/aces/events/IMG_0037_x4mihw.jpg' },
     { 'name': 'xyz', 'text': '', 'url': 'https://res.cloudinary.com/dcgtilnwq/image/upload/v1640841259/aces/events/IMG_0042_uahuct.jpg' },
     { 'name': 'xyz', 'text': '', 'url': 'https://res.cloudinary.com/dcgtilnwq/image/upload/v1640841249/aces/events/IMG-20191003-WA0018_cxkkwy.jpg' },

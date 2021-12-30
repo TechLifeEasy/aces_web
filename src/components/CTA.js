@@ -32,11 +32,11 @@ const CTA = () => {
                 height="24"
               />
             </svg>
-            <span className="relative">Who Are We?</span>
+            <span className="relative dark:text-white">Who Are We?</span>
           </span>{" "}
           {/* quick, brown fox jumps over a lazy dog */}
         </h2>
-        <p className="text-base text-gray-700 md:text-lg">
+        <p className="text-base text-gray-700 md:text-lg dark:text-white">
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem
           accusantium doloremque rem aperiam, eaque ipsa quae.
         </p>
