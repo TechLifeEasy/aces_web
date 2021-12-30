@@ -23,27 +23,24 @@ export default function Socials() {
             <Icon 
             url='https://www.linkedin.com/company/association-of-computer-engineering-students/' 
             Component={BsLinkedin}
-            color='text-blue-600'
+           
             ></Icon>
             <Icon 
             url='https://www.instagram.com/aces_it_nu/' 
             Component={BsInstagram}
-            color='text-red-500'
+            
             ></Icon>
             <Icon 
             url='https://www.facebook.com/aces.itnu/' 
             Component={BsFacebook}
-            color='text-blue-600'
+            
             ></Icon>
             <Icon 
             url='https://technology.nirmauni.ac.in/student_work/aces/' 
             Component={BsCloudFill}
             ></Icon>
            
-    
 
- 
-            
         </div>
             </Zoom>
         </div>
@@ -54,7 +51,7 @@ export default function Socials() {
 function Icon({url,Component,color}) {
     return (
         <a href={url} className='flex-1 ' target="_blank" rel="noreferrer">
-        <Component size={25} className={'text-base mb-3 ml-1 '+color}/>
+        <Component size={30} className={'text-base mb-3 ml-1 '+color}/>
     </a>
     )
 }
