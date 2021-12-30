@@ -53,18 +53,27 @@ export default function Events({ state }) {
     )
 }
 
-function Event({ name, text, url, state }) {
+function Event({ name, text, url, state,isVideo }) {
 
 
     return (
         <div className={`flex flex-col items-center justify-center flex-none w-2/3  bg-blue cursor-pointer rounded-sm  ${!state ? 'team-div' : ' m-3 mx-auto'}`}>
-            <img
+           
+           {
 
-                src={url}
-                alt='#'
-                className={!state ? `h-64` : 'h-80'}
+              isVideo
+              ?
+              <video src={url} className={!state ? `h-64` : 'h-80'} controls></video>
+              :
 
-            ></img>
+               <img
+               
+               src={url}
+               alt='#'
+               className={!state ? `h-64` : 'h-80'}
+               
+               ></img>
+            }
             <h1 className=' text-blue-600 text-xl'>{name}</h1>
 
             <div className=' text-justify'>{text || 'JavaScript often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS.'}</div>
