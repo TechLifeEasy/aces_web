@@ -22,7 +22,7 @@ export default function About() {
              
 
              <h2 className="max-w-lg mb-14 font-sans text-4xl font-bold">
-          Niram Univercity
+          Nirma University
         </h2>
       
             <div className='relative flex flex-row gap-4 text-blue-500 dark:text-sky-200'>
