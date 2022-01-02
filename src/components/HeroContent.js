@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../assets/heroimage.svg";
+// import image from "../assets/heroimage.svg";
 import { BrowserRouter as Router, Route, Routes, NavLink } from 'react-router-dom';
 import Typewriter from 'typewriter-effect';
 import Zoom from 'react-reveal/Zoom';
@@ -70,7 +70,7 @@ const HeroContent = () => {
       <div className="inset-y-0 right-0 w-full max-w-xl px-4 mx-auto lg:pl-8 lg:pr-0 lg:mb-0 lg:mx-0 lg:w-1/2 lg:max-w-full lg:absolute xl:px-0">
         <img
           className="object-cover w-full h-52 rounded shadow-lg lg:rounded-none lg:shadow-none sm:h-48 lg:h-full"
-          src={image}
+          src='/image/heroimage.svg'
           alt=""
           />
       </div>
