@@ -1,12 +1,17 @@
 import React, { useState } from "react";
 import nirmalogo from "../assets/nirmalogo.png";
 import aceslogo from "../assets/aceslogo.png";
-import { BrowserRouter as Router, Route, Routes, NavLink } from 'react-router-dom';
-import  Contact  from './Contact';
-import Events from './Events';
-import Team from './Team';
-import About from './About';
-import Home from './Home';
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  NavLink,
+} from "react-router-dom";
+import Contact from "./Contact";
+import Events from "./Events";
+import Team from "./Team";
+import About from "./About";
+import Home from "./Home";
 
 const Navbar2 = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,13 +21,9 @@ const Navbar2 = () => {
       <div className="nav px-4 py-5 ml-20 p-3 ">
         <div className="relative flex items-start">
           <ul className="flex items-center hidden space-x-8 lg:flex cursor-pointer dark:text-white">
-            
-       
-            
             <li>
-              < NavLink
+              <NavLink
                 to="/"
-          
                 className="dark:text-white font-medium tracking-wide text-gray-700  transition-colors duration-200 hover:text-blue-700">
                 Home
               </NavLink>
@@ -30,8 +31,6 @@ const Navbar2 = () => {
             <li>
               <NavLink
                 to="/about"
-          
-          
                 className="dark:text-white font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-700">
                 About Us
               </NavLink>
@@ -39,7 +38,6 @@ const Navbar2 = () => {
             <li>
               <NavLink
                 to="/events"
-          
                 className="font-medium dark:text-white dark:text-white tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-700">
                 Events
               </NavLink>
@@ -47,30 +45,26 @@ const Navbar2 = () => {
             <li>
               <NavLink
                 to="/team"
-          
                 className="font-medium dark:text-white dark:text-white tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-700">
                 Team
               </NavLink>
             </li>
 
-          {/* <NavLink
+            {/* <NavLink
           to="/"
           aria-label="Company"
           title="Company"
         class="inline-flex items-center lg:mx-auto"> */}
-      
+
             <li>
               <NavLink
                 to="/contact"
-             
                 className="font-medium dark:text-white dark:text-white tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-700">
                 Contact Us
               </NavLink>
             </li>
-                  </ul>
-          
-           
-        
+          </ul>
+
           <div className="ml-auto lg:hidden">
             <button
               aria-label="Open Menu"
@@ -93,10 +87,9 @@ const Navbar2 = () => {
               </svg>
             </button>
             {isMenuOpen && (
-              <div className="absolute top-0 left-0 w-full">
+              <div className="absolute z-10 top-0 left-0 w-full">
                 <div className="p-5 bg-white border rounded shadow-sm">
                   <div className="flex items-center justify-between mb-4">
-                  
                     <div>
                       <button
                         aria-label="Close Menu"
@@ -126,7 +119,6 @@ const Navbar2 = () => {
                       <li>
                         <NavLink
                           to="/about"
-                         
                           className="font-medium dark:text-white tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">
                           About Us
                         </NavLink>
@@ -134,7 +126,6 @@ const Navbar2 = () => {
                       <li>
                         <NavLink
                           to="/events"
-                          
                           className="font-medium dark:text-white tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">
                           Events
                         </NavLink>
@@ -142,12 +133,10 @@ const Navbar2 = () => {
                       <li>
                         <NavLink
                           to="/team"
-                        
                           className="font-medium dark:text-white tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">
                           Team
                         </NavLink>
                       </li>
-
                     </ul>
                   </nav>
                 </div>
@@ -157,7 +146,6 @@ const Navbar2 = () => {
         </div>
       </div>
       <Routes>
-
         <Route exact path="/" element={<Home />} />
         <Route exact path="/contact" element={<Contact />} />
         <Route exact path="/events" element={<Events state={true} />} />
